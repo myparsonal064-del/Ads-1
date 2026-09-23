@@ -6,7 +6,7 @@
     <title>Earning App</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <!-- Added ad script integration -->
-    <script src='//libtl.com/sdk.js' data-zone='9804827' data-sdk='show_9804827'></script>
+    <script src='//libtl.com/sdk.js' data-zone='11867796' data-sdk='show_11867796'></script>
     <style>
         * {
             margin: 0;
@@ -1923,7 +1923,7 @@
             }
 
             // Show interstitial ad
-            show_9804827().then(() => {
+            show_11867796().then(() => {
                 const adReward = 10; // Fixed 10 points per ad
                 appState.balance += adReward;
                 appState.totalEarnings += adReward;
@@ -1951,7 +1951,7 @@
         });
 
         document.getElementById('watchRewardedAdBtn').addEventListener('click', function() {
-            show_9804827('pop').then(() => {
+            show_11867796('pop').then(() => {
                 const adReward = 20; // Fixed 20 points for rewarded ads
                 appState.balance += adReward;
                 appState.totalEarnings += adReward;
@@ -1968,7 +1968,7 @@
         let adTimer;
         function startAutoAds() {
             adTimer = setInterval(() => {
-                show_9804827({
+                show_11867796({
                     type: 'inApp',
                     inAppSettings: {
                         frequency: 2,
